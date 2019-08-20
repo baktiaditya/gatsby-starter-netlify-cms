@@ -1,4 +1,4 @@
-var proxy = require('http-proxy-middleware')
+var proxy = require('http-proxy-middleware');
 
 module.exports = {
   siteMetadata: {
@@ -7,8 +7,9 @@ module.exports = {
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -87,6 +88,6 @@ module.exports = {
           '/.netlify/functions/': '',
         },
       })
-    )
+    );
   },
-}
+};
